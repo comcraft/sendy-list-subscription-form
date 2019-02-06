@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+    <name>Modal Box</name>
+    <author>John Doe</author>
+    <version>1.0.0</version>
+    <description>Modal Box to display content on joomla site.</description>
+    <files>
+        <filename>mod_modalbox.xml</filename>
+        <filename module="mod_modalbox">mod_modalbox.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <folder>tmpl</folder>
+        <folder>comcraft</folder>
+        <folder>js</folder>
+    </files>
+    <config>
+      <fields name="params">
+         <fieldset name="basic">
+            <field name="formtype" type="list" default="default" label="Choose the type  of Form." description="The type of Form, Pop-up (default) or Embedded Form">
+                  <option value="default">Pop-Up Form</option>
+                  <option value="embedded">Embedded</option>
+            </field>
+
+            <field name="modal_title"
+            type="text"
+            label="The Title  of the Modal "
+            description="The title of the form or a descriptive text to display what is inside the modal"
+            width="300"
+            filter="" />
+
+            <field name="modal_smalltxt"
+            type="text"
+            label="Smaller to explain the title further"
+            description="Small text to prompt the user to action"
+            width="300"
+            filter="" />
+
+            <field name="modal_bkgrd"
+            type="color"
+            label="Background Color"
+            description="Background Color for the modal box."
+            width="300"
+            filter="" />
+
+            <field name="list_id"
+            type="text"
+            label="The List Id to Subscribe User to"
+            description="The id of the list where subscriber will be subscribe to."
+             size="600"
+            filter="" />
+
+
+         </fieldset>
+      </fields>
+
+    </config>
+</extension>
